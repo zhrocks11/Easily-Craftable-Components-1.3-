@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName = "TableMachining"]/recipes</xpath>
+        <value>
+          <li>Make_ComponentIndustrial</li>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>/Defs/RecipeDef[defName = "Make_ComponentIndustrial"]/skillRequirements</xpath>
+        <value>
+          <skillRequirements>
+            <Crafting>4</Crafting>
+          </skillRequirements>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+      <xpath>/Defs/RecipeDef[defName = "Make_ComponentIndustrial"]/workAmount</xpath>
+        <value>
+          <workAmount>2000</workAmount>
+        </value>
+    </Operation>
+
+</Patch>
+
